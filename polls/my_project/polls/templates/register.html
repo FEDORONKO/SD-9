@@ -1,0 +1,18 @@
+<!-- polls/templates/register.html -->
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Реєстрація</title>
+</head>
+<body>
+    <h2>Реєстрація</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}  <!-- Виведення форми, поля як параграфи -->
+        <button type="submit">Зареєструватися</button>
+    </form>
+</body>
+</html>
